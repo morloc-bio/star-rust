@@ -1,0 +1,13 @@
+name: star-rust
+version: 0.1.0
+homepage: null
+synopsis: Rust implementation of star (STAR run as a program)
+description: Builds STAR indices and aligns reads with nf-core/rnaseq's star_salmon arguments by running the STAR executable; parses Log.final.out.
+category: bioinformatics
+license: MIT
+author: "Zebulun Arendsee"
+maintainer: "z@morloc.io"
+github: null
+bug-reports: null
+tool-deps:
+  star: { version: "==2.7.11b", channel: "bioconda" }

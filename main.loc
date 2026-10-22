@@ -1,0 +1,18 @@
+--' Rust implementation of the star module
+module star-rust (*)
+
+import star
+import root-rust
+
+record Rust => StarIndexOpts = "StarIndexOptsRs"
+record Rust => StarOpts = "StarOptsRs"
+record Rust => StarRun = "StarRunRs"
+record Rust => StarStats = "StarStatsRs"
+
+source Rust from "star.rs"
+  ( "star_sa_index_bases" as saIndexBases
+  , "star_build_index" as buildStarIndex
+  , "star_align_pairs" as alignStarPairs
+  , "star_align_reads" as alignStarReads
+  , "star_stats" as starStats
+  )

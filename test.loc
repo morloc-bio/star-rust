@@ -1,0 +1,5 @@
+--' The star test suite against star-rust
+module test-star-rust (test)
+
+import star.test (test)
+import star-rust
